@@ -24,12 +24,12 @@ p{
 }
 
 h1{
-    font-size: 7rem;
+    font-size: 10rem;
     color: #E6DEDD;
 }
 
 h2{
-    font-size: 2.6rem;
+    font-size: 5rem;
 }
 
 h3{
@@ -45,6 +45,13 @@ nav li {
     list-style: none;
     display: inline-block;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    nav li {
+        list-style: none;
+        display: block;
+    }
 }
 
 /* Footer*/
@@ -79,7 +86,10 @@ nav li {
     width: 200px;
 }
 
+
+
 /* Navegación*/
+
 .navegacion__enlace{
     color: #F89D13;
     font-family: 'Roboto', sans-serif;
@@ -91,6 +101,10 @@ nav li {
     color: #E6DEDD;
 }
 
+.botonnav{
+    background-color: #E6DEDD;
+}
+
 /* Titulo Principal */
 .tituloprincipal{
     background: linear-gradient(to top , rgb(0 0 0 /.3), rgb(0 0 0 /.9)), url("../assets/images/indexbackground.jpg");
@@ -98,4 +112,11 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Presentacion Inicio */
+.presentacion{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    padding: 3rem;
 }
