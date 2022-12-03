@@ -30,29 +30,35 @@ p{
     color: #1B120F;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    line-height: 2rem;
 }
 
 h1{
-    font-size: 10rem;
+    font-size: 13rem;
     color: #E6DEDD;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .5rem;
 }
 
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 7rem;
+        font-size: 10rem;
     }
 }
 
 h2{
-    font-size: 5rem;
+    font-size: 7rem;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 2rem;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 2.599rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2, h3{
-    font-family: 'Oswald', sans-serif;
+h2, h3{
+    
     text-align: center;
 }
 
@@ -134,7 +140,7 @@ body {
 }
 
 
-/* Navegación*/
+/* Navegación**/
 
 .navbar {
     position: relative;
@@ -204,5 +210,30 @@ body {
 .presentacion{
     font-size: 2rem;
     line-height: 2.3rem;
-    padding: 3rem;
+    padding: 6rem;
+}
+
+/** Servicios Index **/
+
+.icono{
+    width: 3rem;
+}
+
+
+
+/** Página Producciones **/
+
+.cover{
+    object-fit: cover;
+}
+
+.titulo-producciones{
+    font-family: 'Abel', sans-serif;
+    font-size: 5.8rem;
+    
+}
+
+.texto-producciones{
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
 }
