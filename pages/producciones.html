@@ -6,57 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KLUB Films</title>
-    <link rel="shortcut icon" href="./images/Logo-Klub.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/Logo-Klub.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="header">
-        <a href="../index.html">
-            <img class="header__logo" src="../assets/images/Logo-Klub.png" alt="Logo Klub Films">
-        </a>    
-        
-        <nav class="navegacion">
-            <ul>
-                <li><a class="navegacion__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="navegacion__enlace navegacion__enlace--activo" href="./producciones.html">Producciones</a></li>
-                <li><a class="navegacion__enlace" href="./servicios.html">Servicios</a></li>
-                <li><a class="navegacion__enlace" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+        <div class="contenedor">
+      
+          <a href="../index.html"><img class="contenedor__logo" src="../assets/images/Logo-Klub.png" alt="Logo Klub Films"></a>
+      
+          <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../assets/images/Logo-Klub.png"
+                  alt="Logo Klub Films"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample04">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="./producciones.html">Producciones</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
     
 
         
-
+<!-- Main -->
     <main>
         <h1 class="tituloprincipal">Producciones</h1>
         
-    <section>
-        <div>
-            <img src="../assets/images/produccion1.jpg" alt="produccion1">
-            <h2>Produccion 1</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in libero, id quas ut illum hic fugiat accusamus cupiditate non tenetur voluptate fugit qui. Ratione quod iste eveniet deserunt fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur debitis dolores voluptatum, quia voluptas sint delectus cupiditate vitae eos at vel nisi a quas enim consequatur? Vero adipisci incidunt voluptatum?</p>
-        </div>
-        <div>
-            <img src="../assets/images/produccion2.jpg" alt="produccion2">
-            <h2>Produccion 2</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in libero, id quas ut illum hic fugiat accusamus cupiditate non tenetur voluptate fugit qui. Ratione quod iste eveniet deserunt fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur debitis dolores voluptatum, quia voluptas sint delectus cupiditate vitae eos at vel nisi a quas enim consequatur? Vero adipisci incidunt voluptatum?</p>
-        </div>
-        <div>
-            <img src="../assets/images/produccion3.jpg" alt="produccion3">
-            <h2>Produccion 3</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in libero, id quas ut illum hic fugiat accusamus cupiditate non tenetur voluptate fugit qui. Ratione quod iste eveniet deserunt fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur debitis dolores voluptatum, quia voluptas sint delectus cupiditate vitae eos at vel nisi a quas enim consequatur? Vero adipisci incidunt voluptatum?</p>
-        </div>
-    </section>
+        <section class="container">
+          <hr class="featurette-divider">
+          <div data-aos="fade-left" class="row featurette align-items-center">
+            <div class="col-md-7 p-5">
+              <h2 class="featurette-heading titulo-producciones text-uppercase">Las Leyes de la Frontera</h2>
+              <p class="lead texto-producciones">Verano de 1978. Ignacio Cañas (Marcos Ruiz) es un estudiante de 17 años introvertido y algo inadaptado que vive en Girona. Al conocer al Zarco (Chechu Salgado) y a Tere (Begoña Vargas), dos jóvenes delincuentes del barrio chino de la ciudad, se ve inmerso en una carrera imparable de hurtos, robos y atracos. Es la historia en la que Nacho se hace mayor, cruzando la línea que hay entre el bien y el mal, entre la justicia y la injusticia… Adaptación de la novela homónima de Javier Cercas.</p>
+            </div>
+            <div class="col-md-5">
+              <a href="https://www.youtube.com/watch?v=9Oyn0cqenaE" target="_blank"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto cover p-md-4" src="../assets/images/leyesfrontera.jpg" alt="Produccion 1" width="500" height="400"></a>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette align-items-center"  data-aos="fade-right" data-aos-offset="300">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading titulo-producciones text-uppercase">Tadeo Jones 3</h2>
+              <p class="lead texto-producciones">A Tadeo le encantaría que sus colegas arqueólogos le aceptasen como a uno más, pero siempre acaba liándola: destroza un sarcófago y desata un conjuro que pone en peligro la vida de sus amigos, Momia, Jeff y Belzoni. Con todos en contra y solo ayudado por Sara, Tadeo emprenderá una huida llena de aventuras, que le llevará de México a Chicago y de París a Egipto, para encontrar la manera de acabar con la maldición de la momia.</p>
+            </div>
+            <div class="col-md-5 order-md-1 bg-image hover-zoom">
+              <a href="https://www.youtube.com/watch?v=W1XUBKGSLIg" target="_blank"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto cover p-4" src="../assets/images/tadeojones.jpg" alt="Produccion 1" width="500" height="400"></a>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette align-items-center" data-aos="fade-left" data-aos-offset="300">
+            <div class="col-md-7">
+              <h2 class="featurette-heading titulo-producciones text-uppercase">La casa entre los cactus</h2>
+              <p  class="lead texto-producciones">Emilio y Rosa han creado una familia perfecta. En los años setenta, en algún desértico lugar de las Islas Canarias, han construido un hogar lleno de amor por sus cinco hijas, todas con nombres de flor: Lis, Iris, Melisa, Lila y Dalia. Aquí, apartados de la civilización y de una vida que dejaron atrás en su país, disfrutan de un particular paraíso, ajenos al resto del mundo. Un mundo que supone una amenaza y que, de interferir con la familia, podría acabar con ella para siempre. Emilio y Rosa lo saben, son los únicos conscientes del peligro que corren, y por ello llevan toda una vida ocultando a sus hijas un terrible secreto.</p>
+            </div>
+            <div class="col-md-5">
+              <a href="https://www.youtube.com/watch?v=17B812YB8X8" target="_blank"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto cover p-4" src="../assets/images/lacasa.jpeg" alt="Produccion 1" width="500" height="400"></a>
+            </div>
+          </div>    
+          <hr class="featurette-divider">
+        </section>
+        
         
     </main>
 
@@ -74,7 +109,11 @@
         </div>
               
     </footer>
-
+    <script src="../js/aos.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
