@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KLUB Films</title>
-    <link rel="shortcut icon" href="../assets/images/Logo-Klub.png">
+    <meta name="description" content="Formulario para rellenar con los datos de usuario, que esté interesado en realizar una producción audivisual">
+    <meta name="keywords" content="contacto, klub films contacto, formulario, produccion, audiovisual">
+    <title>KLUB Films - Productora Audiovisual Independiente - Contacto</title>
+    <link rel="shortcut icon" href="../assets/images/favicomKlub.png">
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -17,11 +19,15 @@
 
 <body>
 
+    <!-- Header -->
+
     <header class="header">
         <div class="contenedor">
       
           <a href="../index.html"><img class="contenedor__logo" src="../assets/images/Logo-Klub.png" alt="Logo Klub Films"></a>
       
+          <!-- Navegación -->
+
           <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../assets/images/Logo-Klub.png"
@@ -50,19 +56,37 @@
 <!-- Main -->
     <main>
         <h1 class="tituloprincipal">Contacto</h1>
-
-        <section class="container">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      
+        <!-- Contacto -->
+      
+        <section class="contacto">
+        <form>
+          <div class="container">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" required>E-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" required>Asunto</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        </section>
+        </form>       
+      </section>
+        
         
     </main>
+
+    <!-- Footer -->
 
     <footer class="footer">
         <p class="footer__texto">
@@ -70,9 +94,12 @@
         </p>
         
         <div class="footer__icons">
-            <a href="#"><img class="footer__icons__icon" src="../assets/images/behacenicon.svg" alt="behance"></a>
-            <a href="#"><img class="footer__icons__icon" src="../assets/images/facebookicon.svg" alt="facebook"></a>
-            <a href="#"><img class="footer__icons__icon" src="../assets/images/instagramicon.svg" alt="instagram"></a>
+          <a href="../pages/error.html" target="_blank"><img class="footer__icons__icon" src="../assets/images/behacenicon.svg"
+              alt="behance"></a>
+          <a href="../pages/error.html" target="_blank"><img class="footer__icons__icon" src="../assets/images/facebookicon.svg"
+              alt="facebook"></a>
+          <a href="https://www.instagram.com/klubfilms/" target="_blank"><img class="footer__icons__icon"
+              src="../assets/images/instagramicon.svg" alt="instagram"></a>
         </div>
               
     </footer>

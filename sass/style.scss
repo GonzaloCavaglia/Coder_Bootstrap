@@ -1,0 +1,17 @@
+// Generales
+@import "variables";
+@import "fuentes";
+@import "reset";
+@import "general";
+@import "mixins";
+
+// Header y Footer
+@import "footer";
+@import "header";
+@import "nav";
+
+// Main
+@import "main";
+
+
+@import "error404"

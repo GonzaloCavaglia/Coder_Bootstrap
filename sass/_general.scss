@@ -1,0 +1,44 @@
+html {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+    body{
+        background-color: $color-secundario;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.6rem;
+        color: $color-primario;
+        font-family: $font-texto;
+        text-align: center;
+        line-height: 2rem;
+    }
+    
+    h1{
+        font-size: 9rem;
+        color: $color-secundario;
+        font-family: $font-titulos;
+        letter-spacing: .5rem;
+    }
+    h2{
+        font-size: 7rem;
+        font-family: $font-titulos;
+        padding: 2rem;
+    }
+    
+    h3{
+        font-size: 2.599rem;
+        font-family: $font-subtitulos;
+    }
+    
+    h2, h3{
+        text-align: center;
+    }
+  }
+
+

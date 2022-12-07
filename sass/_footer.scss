@@ -1,0 +1,18 @@
+.footer{
+    background-color: $color-primario;
+    margin-top: 2rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .footer__texto{
+        color: $color-secundario;
+    }
+    .footer__icons__icon{
+        width: 20px;
+        margin: 0 0.5rem;
+    }
+
+}

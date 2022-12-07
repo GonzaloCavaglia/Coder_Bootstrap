@@ -1,0 +1,13 @@
+.error404{
+    background-color: $color-primario;
+    height: 100vh;
+    
+    .error404__contenedor{
+       
+        p{
+            color: $color-terciario;
+            margin: auto auto;
+        }
+    }
+}
+

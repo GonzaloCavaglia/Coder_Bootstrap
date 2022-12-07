@@ -1,0 +1,36 @@
+@mixin flex-direction-justificar($direction,$justify:center){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+}
+
+@mixin flex-direction-aling ($direction, $aling:center){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $aling;
+}
+
+@mixin caja($ancho, $largo, $borde, $b-radius:0){
+    width: $ancho;
+    height: $largo;
+    border: $borde;
+    border-radius: $b-radius;
+}
+
+@mixin Bg-Img($color, $img, $repeat, $size){
+    background-image: $color, $img;
+    background-repeat: $repeat;
+    background-size: $size;
+}
+
+@mixin color-shadow-size ($color, $shadow, $size){
+    color: $color;
+    text-shadow: $shadow;
+    font-size: $size;
+}
+
+@mixin md {
+    @media screen and (max-width: #{$screen-sm-max}) {
+      @content;
+    }
+  }

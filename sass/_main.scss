@@ -1,0 +1,124 @@
+//** Index **// 
+main {
+    .tituloprincipal {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../assets/images/indexbackground.jpg");
+        height: 22vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-md {
+        .presentacion {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            padding: 6rem;
+        }
+    }
+
+    .container {
+        .icono {
+            width: 3rem;
+        }
+    }
+}
+
+
+//* Producciones **//
+body {
+    .container {
+        margin-top: 5rem;
+
+        .titulo-producciones {
+            font-family: $font-titulos-producciones;
+            font-size: 5.8rem;
+
+        }
+
+        .texto-producciones {
+            font-size: 1.6rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .bd-placeholder-img {
+            box-shadow: $sombra-exterior;
+        }
+    }
+}
+
+
+//** Servicios **// 
+main {
+    .contenedor {
+        @include flex-direction-justificar(row, space-evenly);
+        padding: 5rem 0 5rem 0;
+
+        @include md {
+            @include flex-direction-aling(column, center);
+        }
+
+        .contenedor__servicio {
+            @include caja (($ancho-servicios/2)-18, 70rem, $borde-caja, 1rem);
+            @include Bg-Img ($gradient-servicio, url(../assets/images/rodaje.jpg), no-repeat, cover);
+            box-shadow: $sombra-exterior;
+
+            @include md {
+                @include caja (100%, 50rem, $borde-caja, 1rem);
+                margin-bottom: 5rem;
+            }
+
+            h2 {
+                @include color-shadow-size($color-secundario, $sombra-texto, 6.2rem);
+            }
+
+            p {
+                color: $color-secundario;
+                font-family: $font-texto;
+                font-weight: 600;
+                padding: .6rem;
+                text-shadow: $sombra-texto;
+            }
+        }
+    }
+}
+
+
+//** Nosotros **// 
+
+.nosotros_texto {
+    text-align: justify;
+}
+
+
+//** Contacto **//
+
+main {
+    .contacto{
+        .container{
+            width: 50%;
+            @include md{
+                width: 100%;
+            }
+            .form-label {
+                font-size: 2rem;
+                font-family: $font-texto;
+            }
+            .form-control {
+                width: 100%;
+                font-size: 1.5rem;
+                line-height: 2;
+                color: $color-primario;
+            }
+            .btn{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+        
+    }
+    
