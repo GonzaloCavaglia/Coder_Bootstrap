@@ -28,7 +28,9 @@ main {
 body {
     .container {
         margin-top: 5rem;
-
+        hr{
+            margin: 3rem;
+        }
         .titulo-producciones {
             font-family: $font-titulos-producciones;
             font-size: 5.8rem;
@@ -62,25 +64,28 @@ main {
         }
 
         .contenedor__servicio {
-            @include caja (($ancho-servicios/2)-18, 70rem, $borde-caja, 1rem);
+            @include caja (($ancho-servicios/2)-18, 50rem, $borde-caja, 1rem);
             @include Bg-Img ($gradient-servicio, url(../assets/images/rodaje.jpg), no-repeat, cover);
             box-shadow: $sombra-exterior;
 
             @include md {
-                @include caja (100%, 50rem, $borde-caja, 1rem);
+                @include caja (100%, 37rem, $borde-caja, 1rem);
                 margin-bottom: 5rem;
             }
 
             h2 {
-                @include color-shadow-size($color-secundario, $sombra-texto, 6.2rem);
+                @include color-shadow-size($color-secundario, $sombra-texto, 5.5rem);
             }
 
             p {
                 color: $color-secundario;
                 font-family: $font-texto;
                 font-weight: 600;
-                padding: .6rem;
+                padding: 0 2rem 0 2rem;
                 text-shadow: $sombra-texto;
+                line-height: 2.2rem;
+                letter-spacing: 0.2rem;
+                text-align:start;
             }
         }
     }
@@ -88,18 +93,33 @@ main {
 
 
 //** Nosotros **// 
-
-.nosotros_texto {
-    text-align: justify;
+main{
+    .contenedorNosotros{
+        width: 90rem;
+        padding-bottom: 2rem;
+        .nosotros_texto {
+            text-align: justify;
+        }
+    }
 }
+
 
 
 //** Contacto **//
 
 main {
+    .tituloContacto{
+        font-family: $font-titulos-producciones;
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
     .contacto{
         .container{
             width: 50%;
+            box-shadow: $sombra-exterior;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 5rem;
             @include md{
                 width: 100%;
             }
@@ -113,9 +133,16 @@ main {
                 line-height: 2;
                 color: $color-primario;
             }
-            .btn{
+            .btn-warning {
                 font-size: 2rem;
-            }
+                width: 10rem;
+                color: $color-primario;
+                background-color: $color-terciario;
+                border-color: $color-terciario;
+                @include md{
+                    width: 100%;
+                }
+              }
         }
     }
     

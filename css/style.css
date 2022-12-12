@@ -126,6 +126,8 @@ main .container .icono {
 
 body .container {
   margin-top: 5rem; }
+  body .container hr {
+    margin: 3rem; }
   body .container .titulo-producciones {
     font-family: "Abel", sans-serif;
     font-size: 5.8rem; }
@@ -135,7 +137,7 @@ body .container {
   body .container .cover {
     object-fit: cover; }
   body .container .bd-placeholder-img {
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75); }
 
 main .contenedor {
   display: flex;
@@ -149,36 +151,51 @@ main .contenedor {
       align-items: center; } }
   main .contenedor .contenedor__servicio {
     width: 32rem;
-    height: 70rem;
+    height: 50rem;
     border: 0.1rem solid #0a0a0a;
     border-radius: 1rem;
     background-image: linear-gradient(to top, rgba(199, 5, 5, 0.507), rgba(199, 0, 0, 0.5)), url(../assets/images/rodaje.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75); }
     @media screen and (max-width: 767px) {
       main .contenedor .contenedor__servicio {
         width: 100%;
-        height: 50rem;
+        height: 37rem;
         border: 0.1rem solid #0a0a0a;
         border-radius: 1rem;
         margin-bottom: 5rem; } }
     main .contenedor .contenedor__servicio h2 {
       color: #E6DEDD;
       text-shadow: #0a0a0a 0.1rem 0 1rem;
-      font-size: 6.2rem; }
+      font-size: 5.5rem; }
     main .contenedor .contenedor__servicio p {
       color: #E6DEDD;
       font-family: "Roboto", sans-serif;
       font-weight: 600;
-      padding: .6rem;
-      text-shadow: #0a0a0a 0.1rem 0 1rem; }
+      padding: 0 2rem 0 2rem;
+      text-shadow: #0a0a0a 0.1rem 0 1rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.2rem;
+      text-align: start; }
 
-.nosotros_texto {
-  text-align: justify; }
+main .contenedorNosotros {
+  width: 90rem;
+  padding-bottom: 2rem; }
+  main .contenedorNosotros .nosotros_texto {
+    text-align: justify; }
+
+main .tituloContacto {
+  font-family: "Abel", sans-serif;
+  font-size: 3rem;
+  margin-top: 5rem; }
 
 main .contacto .container {
-  width: 50%; }
+  width: 50%;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem; }
   @media screen and (max-width: 767px) {
     main .contacto .container {
       width: 100%; } }
@@ -190,12 +207,25 @@ main .contacto .container {
     font-size: 1.5rem;
     line-height: 2;
     color: #0a0a0a; }
-  main .contacto .container .btn {
-    font-size: 2rem; }
+  main .contacto .container .btn-warning {
+    font-size: 2rem;
+    width: 10rem;
+    color: #0a0a0a;
+    background-color: #F89D13;
+    border-color: #F89D13; }
+    @media screen and (max-width: 767px) {
+      main .contacto .container .btn-warning {
+        width: 100%; } }
 
-.error404 {
-  background-color: #0a0a0a;
-  height: 100vh; }
-  .error404 .error404__contenedor p {
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/Logo-Klub.png);
+  background-repeat: no-repeat;
+  background-position: top; }
+  .error h1 {
     color: #F89D13;
-    margin: auto auto; }
+    font-size: 3rem;
+    font-family: "Roboto Mono", monospace; }

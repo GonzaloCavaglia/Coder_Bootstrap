@@ -1,13 +1,15 @@
-.error404{
-    background-color: $color-primario;
-    height: 100vh;
-    
-    .error404__contenedor{
-       
-        p{
+
+    .error{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/Logo-Klub.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        h1{
             color: $color-terciario;
-            margin: auto auto;
+            font-size: 3rem;
+            font-family: $font-404;
         }
     }
-}
-
