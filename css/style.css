@@ -46,9 +46,10 @@ html {
   bottom: 0;
   width: 100%; }
   .footer .footer__texto {
-    color: #E6DEDD; }
+    color: #E6DEDD;
+    margin: .5rem; }
   .footer .footer__icons__icon {
-    width: 20px;
+    width: 2.8rem;
     margin: 0 0.5rem; }
 
 .header {
@@ -137,7 +138,9 @@ body .container {
   body .container .cover {
     object-fit: cover; }
   body .container .bd-placeholder-img {
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    width: 50rem;
+    height: 40rem; }
 
 main .contenedor {
   display: flex;
@@ -182,6 +185,9 @@ main .contenedor {
 main .contenedorNosotros {
   width: 90rem;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 767px) {
+    main .contenedorNosotros {
+      width: 90%; } }
   main .contenedorNosotros .nosotros_texto {
     text-align: justify; }
 
@@ -219,9 +225,10 @@ main .contacto .container {
 
 .error {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/Logo-Klub.png);
   background-repeat: no-repeat;
   background-position: top; }
@@ -229,3 +236,9 @@ main .contacto .container {
     color: #F89D13;
     font-size: 3rem;
     font-family: "Roboto Mono", monospace; }
+  .error button {
+    font-size: 2rem;
+    background-color: #F89D13;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 10rem; }

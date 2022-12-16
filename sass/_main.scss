@@ -48,7 +48,10 @@ body {
 
         .bd-placeholder-img {
             box-shadow: $sombra-exterior;
+            width: 50rem;
+            height: 40rem;
         }
+        
     }
 }
 
@@ -92,11 +95,15 @@ main {
 }
 
 
+
 //** Nosotros **// 
 main{
     .contenedorNosotros{
         width: 90rem;
         padding-bottom: 2rem;
+        @include md{
+            width: 90%;
+        }
         .nosotros_texto {
             text-align: justify;
         }
